@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/laugh-and-cry-svgrepo-com.svg" type="image/x-icon">
+    <script defer src="script.js"></script>
+    <title>Crack Some Jokes!</title>
+  </head>
+  <body>
+
+    <div class="pattern-bg"></div>
+    <main>
+      <div class="container">
+
+        <h2 class="heading-title">Crack Some Jokes!</h2>
+  
+        <div class="selection-box">
+          <p class="selection__subtitle">Choose what type of jokes:</p>
+          <select name="jokeSelect" id="jokeSelection">
+            <option value="Choose type of joke">Choose type of joke</option>
+            <option value="general">General</option>
+            <option value="programming">Programming</option>
+          </select>
+        </div>
+  
+
+        <div class="main-content">
+        <div class="usecase-box" id="usecase-container">
+          <h3 class="usecase__title">How to use:</h3>
+          <p class="usecase__description">
+            Crack some jokes created by <strong>DeCodX</strong> to practice his skills in retrieving data using this jokes API. Feel free to message me if you have any questions or suggestions.
+          </p>
+  
+          <ul class="usecase--lists">
+            <li class="usecase__li">Choose the type of jokes.</li>
+            <li class="usecase__li">Once you have chosen type we will move on to the next step.</li>
+            <li class="usecase__li">
+              Hit the <strong>generate button or press the spacebar</strong>, and jokes will be generated according to your choice.</li>
+            <li class="usecase__li">
+              Get ready to laugh until you cry!
+            </li>
+          </ul>
+        </div>
+  
+        <div class="grid-wrapper">
+          <div class="grid-item">
+            <p class="jokelabel">Joke: <span id="setupJoke"></span></p>
+            <p class="jokelabel">
+             Punchline:
+              <span id="punchlineJoke"></span>
+            </p>
+          </div>
+          <div class="grid-img">
+            <img src="" class="random-img" alt="A random meme image" draggable="false" />
+          </div>
+        </div>
+      </div>
+  
+        <button id="generateBtn" class="btn">Generate Joke</button>
+      </main>
+  
+      <footer>
+        <p>
+          Made with
+  
+          <svg
+            width="24px"
+            height="24px"
+            viewBox="0 0 22 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2 9.1371C2 14 6.01943 16.5914 8.96173 18.9109C10 19.7294 11 20.5 12 20.5C13 20.5 14 19.7294 15.0383 18.9109C17.9806 16.5914 22 14 22 9.1371C22 4.27416 16.4998 0.825464 12 5.50063C7.50016 0.825464 2 4.27416 2 9.1371Z"
+              fill="#FF0000"
+            />
+          </svg>
+          by <a  target="_blank" href="https://github.com/wildecodx">DeCodX</a>
+        </p>
+      </footer>
+      </div>
+  </body>
+</html>
